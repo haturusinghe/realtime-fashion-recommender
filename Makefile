@@ -14,3 +14,6 @@ train-retrieval:
 
 train-ranking:
 	uv run ipython notebooks/3_tp_training_ranking_model.ipynb
+
+create-embeddings:
+	uv run ipython notebooks/4_ip_computing_item_embeddings.ipynb
