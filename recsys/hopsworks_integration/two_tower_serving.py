@@ -66,7 +66,7 @@ class HopsworksQueryModel:
         mr_query_model.save(local_model_path)  # Path to save the model
 
     @classmethod
-    def deploy(cls, ranking_model_type: Literal["ranking", "llmranking"] = "ranking"):
+    def deploy(cls, ranking_model_type: Literal["ranking"] = "ranking"):
         # Prepare secrets used in the deployment
         project = hopsworks.login()
         cls._prepare_secrets(ranking_model_type)
@@ -110,7 +110,7 @@ class HopsworksQueryModel:
         return query_model_deployment
 
     @classmethod
-    def _prepare_secrets(cls, ranking_model_type: Literal["ranking", "llmranking"]):
+    def _prepare_secrets(cls, ranking_model_type: Literal["ranking"]):
         project = hopsworks.login(
             hostname_verification=False,
             api_key_value=settings.HOPSWORKS_API_KEY.get_secret_value(),     
