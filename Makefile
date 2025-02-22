@@ -8,3 +8,6 @@ install:
 
 feature-engineering:
 	uv run ipython notebooks/1_fp_computing_features.ipynb
+
+train-retrieval:
+	uv run ipython notebooks/2_tp_training_retrieval_model.ipynb
