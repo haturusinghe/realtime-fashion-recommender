@@ -17,3 +17,6 @@ train-ranking:
 
 create-embeddings:
 	uv run ipython notebooks/4_ip_computing_item_embeddings.ipynb
+
+create-deployments:
+	uv run ipython notebooks/5_ip_creating_deployments.ipynb
