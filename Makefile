@@ -11,3 +11,6 @@ feature-engineering:
 
 train-retrieval:
 	uv run ipython notebooks/2_tp_training_retrieval_model.ipynb
+
+train-ranking:
+	uv run ipython notebooks/3_tp_training_ranking_model.ipynb
