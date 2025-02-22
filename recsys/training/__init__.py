@@ -1,3 +1,3 @@
-from . import  two_tower
+from . import  two_tower, ranking
 
-__all__ = [ "two_tower"]
+__all__ = [ "two_tower", "ranking" ]
