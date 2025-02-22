@@ -6,6 +6,9 @@ install:
 	. .venv/bin/activate
 	uv pip install --all-extras --requirement pyproject.toml
 
+start-ui:
+	RANKING_MODEL_TYPE=ranking uv run python -m streamlit run streamlit_app.py
+
 feature-engineering:
 	uv run ipython notebooks/1_fp_computing_features.ipynb
 
